@@ -7,7 +7,6 @@
     "url": "https://github.com/02GEEK/redux-course.git"
   },
   "devDependencies": {
-    "deep-freeze": "0.0.1",
     "react-scripts": "0.8.4"
   },
   "dependencies": {
