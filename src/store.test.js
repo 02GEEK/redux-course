@@ -1,5 +1,6 @@
-import store, {STEP_UP,STEP_DOWN,ADD_COUNTER,BOARD_COLOR} from './store';
-import deepFreeze from 'deep-freeze'
+import store from './store';
+import {STEP_UP,STEP_DOWN,ADD_COUNTER,BOARD_COLOR} from './store/types'
+import deepFreeze from 'deep-freeze';
 
 it('changing color', ()=>{
 	const state = store.getState();

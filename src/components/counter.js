@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import store, {STEP_UP,STEP_DOWN} from '../store';
+import {stepUp, stepDown} from '../store/actions';
 
 class Counter extends Component{
 	constructor(props){
@@ -13,13 +13,12 @@ class Counter extends Component{
 	stepUp(){
 		const {index} = this.props;
 
-		store.dispatch({type:STEP_UP, index});
+		stepUp( index);
 	}
 
 	stepDown(){
 		const {index} = this.props;
-		
-		store.dispatch({type:STEP_DOWN,index});
+		stepDown( index);
 	}
 
 	render(){
